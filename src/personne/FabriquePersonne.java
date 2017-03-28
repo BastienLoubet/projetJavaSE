@@ -13,6 +13,12 @@ public class FabriquePersonne {
     public FabriquePersonne() {
     }
 
+    
+    
+    private boolean testNom(String sTest){
+        return false;
+    }
+    
     /**
      * 
      */
