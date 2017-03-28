@@ -12,37 +12,38 @@ public class FabriquePersonne {
      * Default constructor
      */
     public FabriquePersonne() {
-    }
-
-    
-    
+    }    
        
     /**
-     * Demande et verifie le nom entre
+     * Demande et verifie la chaîne de caractères nom.
      */
     public String getNom() {
         String sRes;
         do{
-            sRes = client.Interactions.askString("Veuillez entrer un nom:");
+            sRes = client.Interactions.askString("Veuillez entrer un nom : ");
         }while(!testNom(sRes));
         return sRes;
     }
 
     /**
-     * 
-     * @param sTest
+     * @param sTest pour tester le nom.
      * @return 
      */
     private boolean testNom(String sTest){
-        Pattern.matches("pattern", sTest);
-        return false;
+        boolean b = Pattern.matches("[a-zA-Z]*-?[a-zA-Z]*", "sTest");
+        return b;
     }
     
     /**
-     * 
+     * Demande et verifie la chaîne de caractères prénom.
+     * @return
      */
-    public void getPrenom:String() {
-        // TODO implement here
+    public String getPrenom() {
+        String sRes;
+        do{
+            sRes = client.Interactions.askString("Veuillez entrer un prénom : ");
+        }while(!testPrenom(sRes));
+        return sRes;
     }
 
     /**
