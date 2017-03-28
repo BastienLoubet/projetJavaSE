@@ -17,7 +17,7 @@ public class EcouteurBoutonAjouter extends EcouteurBouton {
     @Override
     public void actionPerformed(ActionEvent ae) {
         FabriquePersonne oFabrique = new FabriquePersonne();
-        oFabrique.ajouter();
+        oFabrique.ajoutPersonne();
     }
 
 }
