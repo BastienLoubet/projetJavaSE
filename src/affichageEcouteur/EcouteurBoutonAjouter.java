@@ -1,6 +1,7 @@
 package affichageEcouteur;
 
-import java.util.*;
+import java.awt.event.ActionEvent;
+import personne.FabriquePersonne;
 
 /**
  * 
@@ -13,16 +14,10 @@ public class EcouteurBoutonAjouter extends EcouteurBouton {
     public EcouteurBoutonAjouter() {
     }
 
-    /**
-     * 
-     */
-    public void actionPerformed() {
-        // TODO implement here
+    @Override
+    public void actionPerformed(ActionEvent ae) {
+        FabriquePersonne oFabrique = new FabriquePersonne();
+        oFabrique.ajouter();
     }
-
-    /**
-     * 
-     */
-    public abstract void actionPerformed();
 
 }

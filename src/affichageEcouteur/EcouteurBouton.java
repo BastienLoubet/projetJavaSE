@@ -1,11 +1,12 @@
 package affichageEcouteur;
 
-import java.util.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
- * 
+ *
  */
-public abstract class EcouteurBouton {
+public abstract class EcouteurBouton implements ActionListener {
 
     /**
      * Default constructor
@@ -13,9 +14,8 @@ public abstract class EcouteurBouton {
     public EcouteurBouton() {
     }
 
-    /**
-     * 
-     */
-    public abstract void actionPerformed();
+    @Override
+    abstract public void actionPerformed(ActionEvent ae);
+    
 
 }

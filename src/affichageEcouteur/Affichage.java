@@ -93,5 +93,21 @@ public class Affichage {
         oPanelInfo = new NotreJpanelInfo();
         oFramePrincipal.add(oPanelInfo);
     }
+
+    JButton getBoutonAjouter() {
+        return oBoutonAjouter;
+    }
+    
+    JButton getBoutonCharger() {
+        return oBoutonCharger;
+    }
+    
+    JButton getBoutonRechercher() {
+        return oBoutonRechercher;
+    }
+
+    JButton getBoutonSauvegarder() {
+        return oBoutonSauvegarder;
+    }
     
 }
