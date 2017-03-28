@@ -11,7 +11,7 @@ public class Personne {
     private Prenom oPrenom;
     private Telephone oTelephone;
     private Adresse oAdresse;
-    private emails oEmails;
+    private Emails oEmails;
 
     /**
      * @param sNom Le nom de la personne
@@ -20,7 +20,7 @@ public class Personne {
      * @param sAdresse 
      * @param aEmails Un tableau contenant tous les emails
      */
-    public void Personne(String sNom, String sPrenom, String sTelephone, String sAdresse, ArrayList<String> aEmails) {
+    public Personne(String sNom, String sPrenom, String sTelephone, String sAdresse, ArrayList<String> aEmails) {
         oNom = new Nom(sNom);
         oPrenom = new Prenom(sPrenom);
         oTelephone = new Telephone(sTelephone);
@@ -30,6 +30,7 @@ public class Personne {
 
     /**
      * retourne le nom
+     * @return 
      */
     public String GetNom() {
          return oNom.getsNom();
