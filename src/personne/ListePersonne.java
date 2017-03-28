@@ -43,7 +43,7 @@ public class ListePersonne {
      * Pour l'implementation du singleton
      * @return l'instance du singleton
      */
-    public ListePersonne getInstance() {
+    public static ListePersonne getInstance() {
         if(oInstance == null){
             oInstance = new ListePersonne();
         }
