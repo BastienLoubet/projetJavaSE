@@ -13,7 +13,7 @@ private String sNom;
      * @param n le nom
      */
     public Nom(String n) {
-        sAdresse = n;
+        sNom = n;
     }
 
     public String getsNom() {
