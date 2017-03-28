@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * 
  */
-public class emails {
+public class Emails {
     
     private ArrayList<String> aEmails;
 
@@ -13,7 +13,7 @@ public class emails {
      * Constructeur 
      * @param a liste des emails
      */
-    public emails(ArrayList<String> a) {
+    public Emails(ArrayList<String> a) {
         aEmails=a;
     }
     
