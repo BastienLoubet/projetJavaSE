@@ -32,7 +32,10 @@ public class Personne {
      * 
      */
     public void Getters...() {
-        // TODO implement here
+        oNom.getsNom();
+        oPrenom.getsPrenom();
+        oTelephone.getsNumTel();
+        oAdresse.getsAdresse();
     }
 
 }
