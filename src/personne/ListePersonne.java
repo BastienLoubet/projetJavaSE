@@ -34,7 +34,7 @@ public class ListePersonne {
      * 
      * @param oPersonne l'objet personne a rajouter a la liste
      */
-    public void add(Personne oPersonne){
+    public void ajouter(Personne oPersonne){
         aPersonnes.add(oPersonne);
     }
     
