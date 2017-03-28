@@ -16,7 +16,7 @@ private String sNom;
         sAdresse = n;
     }
 
-    public String getsAdresse() {
+    public String getsNom() {
         return sNom;
     }
 }
