@@ -29,13 +29,28 @@ public class Personne {
     }
 
     /**
-     * 
+     * retourne le nom
      */
-    public void Getters...() {
-        oNom.getsNom();
-        oPrenom.getsPrenom();
-        oTelephone.getsNumTel();
-        oAdresse.getsAdresse();
+    public String GetNom() {
+         return oNom.getsNom();
+    }
+     /**
+     * retourne le prénom
+     */
+     public String GetPrenom() {
+         return oPrenom.getsPrenom();
+    }
+      /**
+     * retourne le Num de tel
+     */
+      public String GetTelephone() {
+         return oTelephone.getsNumTel();
+    }
+       /**
+     * retourne l'adresse
+     */
+     public String GetAdresse() {
+         return  oAdresse.getsAdresse();
     }
 
 }
