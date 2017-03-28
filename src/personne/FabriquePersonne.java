@@ -46,7 +46,7 @@ public class FabriquePersonne {
         String sRes;
         do{
             sRes = client.Interactions.askString("Veuillez entrer un nom : ");
-        }while(!testNom(sRes));
+        }while(!nomCheck(sRes));
         return sRes;
     }
 
@@ -54,7 +54,7 @@ public class FabriquePersonne {
      * @param sTest pour tester le nom et le prénom.
      * @return vrai ou faux pour alimenter getNom et getPrenom
      */
-    private boolean testNom(String sTest){
+    boolean nomCheck(String sTest){
         if (sTest == null)
             return true;
         if (sTest.length() > 50)
@@ -71,7 +71,7 @@ public class FabriquePersonne {
         String sRes;
         do{
             sRes = client.Interactions.askString("Veuillez entrer un prénom : ");
-        }while(!testNom(sRes));
+        }while(!nomCheck(sRes));
         return sRes;
     }
 
@@ -83,7 +83,7 @@ public class FabriquePersonne {
         String sRes;
         do{
             sRes = client.Interactions.askString("Entrez un numéro de téléphone (xx-xx-xx-xx-xx) : ");
-        }while(!testTel(sRes));
+        }while(!telCheck(sRes));
         return sRes;
     }
     
@@ -91,7 +91,7 @@ public class FabriquePersonne {
      * @param sTest pour tester le téléphone.
      * @return vrai ou faux alimentant getTelephone
      */
-    private boolean testTel(String sTest){
+    boolean telCheck(String sTest){
         if (sTest == null)
             return true;        
         boolean b = Pattern.matches("^[0-9]{2}{[-]?[0-9]{2}){4}$", sTest);
@@ -106,7 +106,7 @@ public class FabriquePersonne {
         String sRes;
         do{
             sRes = client.Interactions.askString("Entrez une adresse : ");
-        }while(!testAdr(sRes));
+        }while(!adrCheck(sRes));
         return sRes;
     }
     
@@ -114,7 +114,7 @@ public class FabriquePersonne {
      * @param sTest pour tester l'adresse.
      * @return vrai ou faux alimentant getAdresse
      */
-    private boolean testAdr(String sTest){
+    boolean adrCheck(String sTest){
         if (sTest == null)
             return true;
         boolean b = sTest.length() < 100 ;
@@ -130,7 +130,7 @@ public class FabriquePersonne {
         ArrayList<String> aTab = new ArrayList<>();
         do{
             sRes = client.Interactions.askString("Entrez une adresse e-mail valide : ");
-            if (sRes != null && testEmail(sRes))
+            if (sRes != null && emailCheck(sRes))
                 aTab.add(sRes);
         }while(sRes != null);
         return aTab;
@@ -140,7 +140,7 @@ public class FabriquePersonne {
      * @param sTest pour tester l'e-mail.
      * @return vrai ou faux alimentant getEmails
      */
-    private boolean testEmail(String sTest){
+    boolean emailCheck(String sTest){
         boolean b = Pattern.matches("^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\\.[a-z]{2,4}$", sTest);
         return b;
     }
