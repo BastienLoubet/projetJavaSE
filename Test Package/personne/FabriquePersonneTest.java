@@ -22,21 +22,6 @@ public class FabriquePersonneTest {
     public FabriquePersonneTest() {
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
     /**
      * Test of getNom method, of class FabriquePersonne.
@@ -122,6 +107,48 @@ public class FabriquePersonneTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of ajoutPersonne method, of class FabriquePersonne.
+     */
+    @Test
+    public void testAjoutPersonne() {
+        System.out.println("ajoutPersonne");
+        FabriquePersonne instance = new FabriquePersonne();
+        Boolean expResult = null;
+        Boolean result = instance.ajoutPersonne();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of nomCheck method, of class FabriquePersonne.
+     */
+    @Test
+    public void testNomCheck() {
+    }
+
+    /**
+     * Test of telCheck method, of class FabriquePersonne.
+     */
+    @Test
+    public void testTelCheck() {
+    }
+
+    /**
+     * Test of adrCheck method, of class FabriquePersonne.
+     */
+    @Test
+    public void testAdrCheck() {
+    }
+
+    /**
+     * Test of emailCheck method, of class FabriquePersonne.
+     */
+    @Test
+    public void testEmailCheck() {
     }
     
 }
