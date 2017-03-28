@@ -1,25 +1,30 @@
 package affichageListeRecherche;
 
-import java.util.*;
-import recherche.Observer1;
+import java.util.Observable;
+import java.util.Observer;
+import javax.swing.JScrollPane;
 
 /**
  * 
  */
-public class NotreJScrollPanel extends JPanel implements Observer1 {
+public class NotreJScrollPanel extends JScrollPane implements Observer {
 
     /**
      * Default constructor
      */
     public NotreJScrollPanel() {
+        super();
     }
 
 
     /**
-     * @param aPers
+     * 
+     * @param o
+     * @param o1 
      */
-    public void update(ObservableListe aPers) {
-        // TODO implement here
+    @Override
+    public void update(Observable o, Object o1) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }
