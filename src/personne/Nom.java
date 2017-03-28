@@ -1,16 +1,22 @@
 package personne;
 
-import java.util.*;
+
 
 /**
  * 
  */
 public class Nom {
-
+private String sNom;
+    
     /**
-     * Default constructor
+     * Construit et store le nom donner
+     * @param n le nom
      */
-    public Nom() {
+    public Nom(String n) {
+        sAdresse = n;
     }
 
+    public String getsAdresse() {
+        return sNom;
+    }
 }
