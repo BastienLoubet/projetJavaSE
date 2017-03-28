@@ -12,12 +12,30 @@ public class FabriquePersonne {
      * Méthode "Architecte" qui permet l'ajout d'une personne.
      * @return si l'ajout a été validé.
      */
-    public Boolean Ajouter() {
+    public Boolean ajoutPersonne() {
         String sNom, sPrenom, sAdresse, sTelephone;
-        ArryList<String> aEmails;
-        
-        
-        
+        ArrayList<String> aEmails;
+        sNom = getNom();
+        if (sNom == null)
+            return false;  
+        sPrenom = getPrenom();
+        if (sPrenom == null)
+            return false;
+        sAdresse = getAdresse();
+        if (sAdresse == null)
+            return false;
+        sTelephone = getTelephone();
+        if (sTelephone == null)
+            return false;
+        aEmails = getEmails();
+    Personne oPersonne = new Personne(sNom, sPrenom, sTelephone, sAdresse, aEmails);
+    ListePersonne.getInstance().ajouter(oPersonne);
+    return true;
+    
+    
+    
+    
+    
     }    
        
     /**
@@ -37,6 +55,8 @@ public class FabriquePersonne {
      * @return vrai ou faux pour alimenter getNom et getPrenom
      */
     private boolean testNom(String sTest){
+        if (sTest == null)
+            return true;
         if (sTest.length() > 50)
             return false;
         boolean b = Pattern.matches("^[^ ][a-zA-Z '\\-éèêëçäà]*[^ ]$", sTest);        
@@ -72,6 +92,8 @@ public class FabriquePersonne {
      * @return vrai ou faux alimentant getTelephone
      */
     private boolean testTel(String sTest){
+        if (sTest == null)
+            return true;        
         boolean b = Pattern.matches("^[0-9]{2}{[-]?[0-9]{2}){4}$", sTest);
         return b;
     }
@@ -93,6 +115,8 @@ public class FabriquePersonne {
      * @return vrai ou faux alimentant getAdresse
      */
     private boolean testAdr(String sTest){
+        if (sTest == null)
+            return true;
         boolean b = sTest.length() < 100 ;
         return b;
     }
@@ -106,7 +130,7 @@ public class FabriquePersonne {
         ArrayList<String> aTab = new ArrayList<>();
         do{
             sRes = client.Interactions.askString("Entrez une adresse e-mail valide : ");
-            if (testEmail(sRes))
+            if (sRes != null && testEmail(sRes))
                 aTab.add(sRes);
         }while(sRes != null);
         return aTab;
