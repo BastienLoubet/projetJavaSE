@@ -1,6 +1,7 @@
 package personne;
 
 import java.util.*;
+import java.util.regex.Pattern;
 
 /**
  * 
@@ -15,17 +16,28 @@ public class FabriquePersonne {
 
     
     
+       
+    /**
+     * Demande et verifie le nom entre
+     */
+    public String getNom() {
+        String sRes;
+        do{
+            sRes = client.Interactions.askString("Veuillez entrer un nom:");
+        }while(!testNom(sRes));
+        return sRes;
+    }
+
+    /**
+     * 
+     * @param sTest
+     * @return 
+     */
     private boolean testNom(String sTest){
+        Pattern.matches("pattern", sTest);
         return false;
     }
     
-    /**
-     * 
-     */
-    public void getNom:String() {
-        // TODO implement here
-    }
-
     /**
      * 
      */
