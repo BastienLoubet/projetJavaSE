@@ -3,6 +3,7 @@ package client;
 import javax.swing.JOptionPane;
 
 /**
+ * classe statique pour les fenetres d'interactions avec l'utilisateur
  */
 public abstract class Interactions {
 
