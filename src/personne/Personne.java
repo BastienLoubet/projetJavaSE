@@ -20,7 +20,7 @@ public class Personne {
      * @param sAdresse 
      * @param aEmails Un tableau contenant tous les emails
      */
-    public void Personne(String sNom, String sPrenom, String sTelephone, String sAdresse, ArrayList<String> aEmails) {
+    public Personne(String sNom, String sPrenom, String sTelephone, String sAdresse, ArrayList<String> aEmails) {
         oNom = new Nom(sNom);
         oPrenom = new Prenom(sPrenom);
         oTelephone = new Telephone(sTelephone);
