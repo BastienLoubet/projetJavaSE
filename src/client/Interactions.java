@@ -1,30 +1,26 @@
 package client;
 
-import java.util.*;
+import javax.swing.JOptionPane;
 
 /**
- * 
  */
 public abstract class Interactions {
 
     /**
-     * Default constructor
+     * @param  sQuestion Le message de la question
+     * @return La chaine de charactere entre par l'utilisateur
      */
-    public Interactions() {
+    public static String askString(String  sQuestion) {
+        return JOptionPane.showInputDialog(sQuestion);
     }
 
     /**
-     * @param  sQuestion
-     */
-    public static void askString:String(String  sQuestion) {
-        // TODO implement here
-    }
-
-    /**
-     * @param sMessage
+     * Affiche un message dans la console et dans une fenetre d'erreur pour l'utilisateur
+     * @param sMessage le message a afficher
      */
     public static void sayError(String sMessage) {
-        // TODO implement here
+        System.out.println(sMessage);
+        JOptionPane.showMessageDialog(null,sMessage,"Erreur !", JOptionPane.ERROR_MESSAGE);
     }
 
 }
