@@ -1,6 +1,7 @@
 package affichageInfo;
 
 import java.util.*;
+import personne.Personne;
 
 /**
  * 

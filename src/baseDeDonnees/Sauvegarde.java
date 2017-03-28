@@ -1,6 +1,7 @@
 package baseDeDonnees;
 
 import java.util.*;
+import personne.ListePersonne;
 
 /**
  * 

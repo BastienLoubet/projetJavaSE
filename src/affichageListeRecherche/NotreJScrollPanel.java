@@ -1,6 +1,7 @@
 package affichageListeRecherche;
 
 import java.util.*;
+import recherche.Observer1;
 
 /**
  * 

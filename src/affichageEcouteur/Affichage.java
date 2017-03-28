@@ -1,6 +1,7 @@
 package affichageEcouteur;
 
 import java.util.*;
+import javax.swing.JFrame;
 
 /**
  * 
