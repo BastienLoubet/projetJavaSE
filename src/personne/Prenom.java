@@ -1,10 +1,12 @@
 package personne;
 
+import java.io.Serializable;
+
 
 /**
  * 
  */
-public class Prenom {
+public class Prenom implements Serializable{
 
     private String sPrenom;
     

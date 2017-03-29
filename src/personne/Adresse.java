@@ -1,9 +1,11 @@
 package personne;
 
+import java.io.Serializable;
+
 /**
  * Objet pour la gestion des adresses
  */
-public class Adresse {
+public class Adresse implements Serializable{
 
     private String sAdresse;
     

@@ -1,11 +1,12 @@
 package personne;
 
+import java.io.Serializable;
 import java.util.*;
 
 /**
  * 
  */
-public class Emails {
+public class Emails implements Serializable{
     
     private ArrayList<String> aEmails;
 

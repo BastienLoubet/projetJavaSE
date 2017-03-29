@@ -1,10 +1,12 @@
 package personne;
 
+import java.io.Serializable;
+
 
 /**
  * 
  */
-public class Telephone {
+public class Telephone implements Serializable{
 private String sNumTel;
     
     /**

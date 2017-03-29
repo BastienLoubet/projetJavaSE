@@ -1,11 +1,13 @@
 package personne;
 
+import java.io.Serializable;
+
 
 
 /**
  * 
  */
-public class Nom {
+public class Nom implements Serializable{
 private String sNom;
     
     /**
