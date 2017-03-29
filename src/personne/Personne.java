@@ -54,5 +54,11 @@ public class Personne implements Serializable{
      public String GetAdresse() {
          return  oAdresse.getsAdresse();
     }
+      /**
+     * retourne le mail
+     */
+     public ArrayList<String> GetMail() {
+         return  oEmails.getaEmails();
+    }
 
 }
