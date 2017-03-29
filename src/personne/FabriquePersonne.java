@@ -94,7 +94,7 @@ public class FabriquePersonne {
     boolean telCheck(String sTest){
         if (sTest == null)
             return true;        
-        boolean b = Pattern.matches("^[0-9]{2}{[-]?[0-9]{2}){4}$", sTest);
+        boolean b = Pattern.matches("^[0-9]{2}([-]?[0-9]{2}){4}$", sTest);
         return b;
     }
 
