@@ -1,7 +1,6 @@
 package affichageEcouteur;
 
 import client.Interactions;
-import com.sun.org.apache.bcel.internal.generic.InstructionConstants;
 import java.awt.event.ActionEvent;
 import personne.FabriquePersonne;
 
