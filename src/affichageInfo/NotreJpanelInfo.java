@@ -31,9 +31,14 @@ public class NotreJpanelInfo extends JPanel implements Observer {
         this.add(new JLabel("Prénom : "+oPersonne.GetPrenom()));
         this.add(new JLabel("Adresse : "+oPersonne.GetAdresse()));
         ArrayList<String> email = oPersonne.GetMail();
+        int i =1;
         for (String mail : email) {
-                int i =1;
-                this.add(new JLabel("Adresse eMail"+ i + mail));
+                this.add(new JLabel("Adresse eMail" +" " + i+ " " + mail));
+                i++;
+            }
+        ArrayList<String> aNumTel = oPersonne.GetTelephone()
+        for (String num : aNumTel) {
+                this.add(new JLabel("Numéro de téléphone" +" " + i+ " " + num));
                 i++;
             }
         this.updateUI();

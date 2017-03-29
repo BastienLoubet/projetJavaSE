@@ -79,12 +79,15 @@ public class FabriquePersonne {
      * Demande et vérifie la chaîne de caratères téléphone.
      * @return retourne la chaîne au format (xx-xx-xx-xx-xx) validée .
      */
-    public String getTelephone() {
+    public ArrayList<String> getTelephone() {
         String sRes;
+        ArrayList<String> aTab = new ArrayList<>();
         do{
-            sRes = client.Interactions.askString("Entrez un numéro de téléphone (xx-xx-xx-xx-xx) : ");
-        }while(!telCheck(sRes));
-        return sRes;
+            sRes = client.Interactions.askString("Entrez un numéro de téléphone valide (xx-xx-xx-xx-xx) : ");
+            if (sRes != null && telCheck(sRes))
+                aTab.add(sRes);
+        }while(sRes != null);
+        return aTab;
     }
     
     /**

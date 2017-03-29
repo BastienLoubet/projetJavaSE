@@ -1,24 +1,29 @@
 package personne;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 
 /**
  * 
  */
 public class Telephone implements Serializable{
-private String sNumTel;
+private ArrayList<String> aNumTel;
     
+
+    public ArrayList<String> getsNumTel() {
+        return aNumTel;
+    }
+
     /**
-     * Construit et store le num de tel donner
-     * @param t le num de tel 
+     * Constructeur 
+     * @param a liste des emails
      */
-    public Telephone(String t) {
-        sNumTel = t;
+    public Telephone(ArrayList<String> a) {
+        aNumTel=a;
     }
-
-    public String getsNumTel() {
-        return sNumTel;
+    
+    public ArrayList<String> getaEmails(){
+        return aNumTel;
     }
-
 }

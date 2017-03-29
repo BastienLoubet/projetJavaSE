@@ -45,7 +45,7 @@ public class Personne implements Serializable{
       /**
      * retourne le Num de tel
      */
-      public String GetTelephone() {
+      public ArrayList<String> GetTelephone() {
          return oTelephone.getsNumTel();
     }
        /**
