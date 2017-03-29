@@ -38,7 +38,9 @@ public class ObservablePersonne extends Observable {
         this.setChanged();
         this.notifyObservers();
     }
-    
+    /**
+     * @return  l'instance de la classe personne
+     */
     public Personne getPersonne() {
         return oPersonne;
     }
