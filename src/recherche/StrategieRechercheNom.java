@@ -1,6 +1,5 @@
 package recherche;
 
-import java.util.*;
 
 /**
  * 
@@ -13,9 +12,11 @@ public class StrategieRechercheNom extends StrategieRecherche {
     public StrategieRechercheNom() {
     }
 
-    /**
-     * @param sRecherche
-     */
-    public abstract void rechercher(void sRecherche);
+    @Override
+    public void rechercher(String sRecherche) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
 
 }

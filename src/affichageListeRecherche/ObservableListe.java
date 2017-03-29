@@ -6,7 +6,7 @@ import personne.Personne;
 /**
  * 
  */
-public class ObservableListe extends Observable1 {
+public class ObservableListe extends Observable {
 
     /**
      * Default constructor

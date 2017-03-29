@@ -17,6 +17,6 @@ public abstract class StrategieRecherche {
     /**
      * @param sRecherche
      */
-    public abstract void rechercher(void sRecherche);
+    public abstract void rechercher(String sRecherche);
 
 }
