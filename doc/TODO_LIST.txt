@@ -1,0 +1,29 @@
+- de	rendre	un	petit	cahier	des	charges	qui	décrit	les	fonctionnalités	que	vous	
+avez	choisies (et	si	nécessaire	leurs limites).	C'est	l'occasion	d'utiliser	les	
+diagrammes	Use	cases	d'UML.
+
+*- de	rendre	un	(tout	petit)	planning	prévisionnel	(quel	est	le	plan	de	finition	des	
+déliverables,	qui	fait	quoi	et	quand)	établi	en	début	de	projet.
+
+- de	rendre	un	document	de	conception qui décrit	votre	analyse	et	vos	choix	en	
+conformité	avec	les	bonnes	pratiques de	conception	objet	(SOLID,	…).	C'est	
+l'occasion	d'utiliser	les	patterns,	les	diagrammes	de	classe	UML,	etc.	par	exemple
+
+- Une	maquette	des	écrans	prévus. N'importe	quel	format	fait	l'affaire.	Vous	
+pouvez	utiliser	un	outil	comme	Evolus	pencil		ou	autre (même	un	pdf	d'un
+croquis	à	la	main	est		ok;	néanmoins	faites	le	propre	pour	que	cela	entre	dans	
+votre	dossier).
+
+- Quelques	classes	(les	principales)	auront	des	plans	de	test	unitaires	complets	
+(l'ensemble	de	leurs	méthodes	non	triviales	auront	une	méthode	de	test	
+associée)	et	un	rapport	de	test	en	confirmera	l'exécution	avec	succès	(copiercoller
+du	log	d'exécution).
+
+- Le	code	sera	bien	sûr	commenté	de	façon	simple	et	utile.	Le	site	Java	doc	sera	
+fourni.
+
+- Il	sera aussi	nécessaire	d'avoir	un	plan	de	test	qui	vérifie	la	onne	adéquation	de	
+l'application	avec	le	besoin.
+
+- Il	est	indispensable	que	le	déploiement	soit	formalisé	(diagramme	de	
+déploiement,	quels	sont	les composants,	quoi	s'installe	où,	comment,	etc.)
