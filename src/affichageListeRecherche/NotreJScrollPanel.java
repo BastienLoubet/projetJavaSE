@@ -4,6 +4,7 @@ import affichageEcouteur.EcouteurBoutonResultat;
 import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -46,7 +47,9 @@ public class NotreJScrollPanel extends JScrollPane implements Observer {
         aListe.forEach((oPersonne) -> {
             oPanel.add(creerBouton(oPersonne));
         });
+        oPanel.setLayout(new BoxLayout(oPanel, BoxLayout.Y_AXIS));
         this.setViewportView(oPanel);
+        oPanel.setVisible(true);
         
     }
 

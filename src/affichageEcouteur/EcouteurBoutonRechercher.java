@@ -1,5 +1,6 @@
 package affichageEcouteur;
 
+import affichageListeRecherche.ObservableListe;
 import client.Interactions;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
@@ -25,6 +26,7 @@ public class EcouteurBoutonRechercher extends EcouteurBouton {
         sRecherche = Interactions.askString("Entrez votre paramètre de recherche ");
         oRecherche = new StrategieRechercheNom();
         aResultat = oRecherche.rechercher(sRecherche);
+        ObservableListe.getInstance().mettreAJour(aResultat);
     }
 
 }
