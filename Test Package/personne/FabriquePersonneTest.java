@@ -85,7 +85,7 @@ public class FabriquePersonneTest {
      */
     @Test
     public void testEmailCheck() {        
-        System.out.println("test AdrCheck");
+        System.out.println("test EmailCheck");
         
         FabriquePersonne oFabrique = new FabriquePersonne();
         boolean b;
