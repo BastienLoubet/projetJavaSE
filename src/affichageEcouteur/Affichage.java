@@ -33,6 +33,8 @@ public class Affichage {
         initPanelMenu();
         initPanelRecherche();
         initPanelInfo();
+        //Pour l'initialisation de l'affichage de toutes les Panels
+        oFramePrincipal.setVisible(true);
     }
     
     /**
@@ -40,7 +42,6 @@ public class Affichage {
      */
     private void initFramePrincipal() {
         oFramePrincipal = new JFrame("Carnet d'adresses");
-        oFramePrincipal.setVisible(true);
         oFramePrincipal.setSize(640, 480);
         oFramePrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         oFramePrincipal.setLayout(new GridLayout(1,3));
@@ -91,6 +92,7 @@ public class Affichage {
      */
     private void initPanelInfo(){
         oPanelInfo = new NotreJpanelInfo();
+        oPanelInfo.setLayout(new BoxLayout(oPanelInfo, BoxLayout.Y_AXIS));
         oFramePrincipal.add(oPanelInfo);
     }
 

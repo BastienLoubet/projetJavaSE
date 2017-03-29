@@ -1,5 +1,6 @@
 package affichageEcouteur;
 
+import affichageInfo.ObservablePersonne;
 import java.awt.event.ActionEvent;
 import java.util.*;
 import personne.Personne;
@@ -20,12 +21,12 @@ public class EcouteurBoutonResultat extends EcouteurBouton {
     }
 
     /**
-     * 
+     * On met a jour l'ObservablePersonne pour l'affichage dans la fenetre d'information
      * @param ae 
      */
     @Override
     public void actionPerformed(ActionEvent ae) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        ObservablePersonne.getInstance().mettreAJour(oPersonne);
     }
 
 }

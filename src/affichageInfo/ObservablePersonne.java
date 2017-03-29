@@ -8,29 +8,38 @@ import personne.Personne;
  */
 public class ObservablePersonne extends Observable {
 
+    
+    private static ObservablePersonne oInstance;
+    private Personne oPersonne;
+    
     /**
      * Default constructor
      */
-    public ObservablePersonne() {
+    private ObservablePersonne() {
     }
+    
 
     /**
      * 
+     * @return l'instance du singleton ou cree l'instance si elle n'existe pas
      */
-    private Personne oPersonne;
-
-    /**
-     * 
-     */
-    public void getInstance() {
-        // TODO implement here
+    public static ObservablePersonne getInstance() {
+        if (oInstance == null){
+            oInstance = new ObservablePersonne();
+        }
+        return oInstance;
     }
 
     /**
-     * @param oPersonne
+     * @param oPersonne l'objet personne a sauvegarder
      */
     public void mettreAJour(Personne oPersonne) {
-        // TODO implement here
+        this.oPersonne = oPersonne;
+        this.setChanged();
+        this.notifyObservers();
     }
-
+    
+    public Personne getPersonne() {
+        return oPersonne;
+    }
 }

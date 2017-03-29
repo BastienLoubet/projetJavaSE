@@ -49,7 +49,6 @@ public class NotreJScrollPanel extends JScrollPane implements Observer {
         });
         oPanel.setLayout(new BoxLayout(oPanel, BoxLayout.Y_AXIS));
         this.setViewportView(oPanel);
-        oPanel.setVisible(true);
         
     }
 
