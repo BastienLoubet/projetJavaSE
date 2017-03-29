@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- *
+ * class herite par tout nos ecouteurs de boutons
  */
 public abstract class EcouteurBouton implements ActionListener {
 
