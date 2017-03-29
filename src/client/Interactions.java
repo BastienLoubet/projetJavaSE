@@ -23,5 +23,14 @@ public abstract class Interactions {
         System.out.println(sMessage);
         JOptionPane.showMessageDialog(null,sMessage,"Erreur !", JOptionPane.ERROR_MESSAGE);
     }
+    
+    /**
+     * Affiche un message dans la console et dans une fenetre d'information pour l'utilisateur
+     * @param sMessage le message a afficher
+     */
+    public static void sayInfo(String sMessage) {
+        System.out.println(sMessage);
+        JOptionPane.showMessageDialog(null,sMessage,"Erreur !", JOptionPane.INFORMATION_MESSAGE);
+    }
 
 }

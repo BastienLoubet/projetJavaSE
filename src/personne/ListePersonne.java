@@ -54,7 +54,7 @@ public class ListePersonne {
      * 
      * @param o la nouvelle instance, pour le chargement
      */
-    public void setInstance(ListePersonne o){
+    public static void setInstance(ListePersonne o){
         oInstance =o;
     }
     

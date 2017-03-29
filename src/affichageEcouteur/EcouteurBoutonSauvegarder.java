@@ -1,7 +1,10 @@
 package affichageEcouteur;
 
+import baseDeDonnees.Sauvegarde;
+import client.Interactions;
 import java.awt.event.ActionEvent;
 import java.util.*;
+import personne.ListePersonne;
 
 /**
  * 
@@ -16,7 +19,12 @@ public class EcouteurBoutonSauvegarder extends EcouteurBouton {
 
     @Override
     public void actionPerformed(ActionEvent ae) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Sauvegarde oSave = new Sauvegarde();
+        if(oSave.sauvegarder(ListePersonne.getInstance())){
+            Interactions.sayInfo("Carnet sauvegarde !");
+        }else{
+            Interactions.sayError("Erreur lors de la sauvegarde du fichier !");
+        }
     }
 
 

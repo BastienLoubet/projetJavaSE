@@ -1,7 +1,10 @@
 package affichageEcouteur;
 
+import baseDeDonnees.Chargement;
+import client.Interactions;
 import java.awt.event.ActionEvent;
 import java.util.*;
+import personne.ListePersonne;
 
 /**
  * 
@@ -16,7 +19,15 @@ public class EcouteurBoutonCharger extends EcouteurBouton {
 
     @Override
     public void actionPerformed(ActionEvent ae) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Chargement oCharge = new Chargement();
+        ListePersonne oRes = oCharge.charger();
+        if(oRes != null){
+            ListePersonne.setInstance(oRes);
+            Interactions.sayInfo("Objet charge !");
+        }else{
+            Interactions.sayError("Impossible de charger le fichier !");
+        }
+                        
     }
 
 
