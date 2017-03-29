@@ -1,5 +1,8 @@
 package recherche;
 
+import java.util.ArrayList;
+import personne.Personne;
+
 
 /**
  * 
@@ -12,8 +15,13 @@ public class StrategieRechercheNom extends StrategieRecherche {
     public StrategieRechercheNom() {
     }
 
+    /**
+     * 
+     * @param sRecherche
+     * @return 
+     */
     @Override
-    public void rechercher(String sRecherche) {
+    public ArrayList<Personne> rechercher(String sRecherche) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

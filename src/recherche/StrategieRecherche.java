@@ -1,6 +1,7 @@
 package recherche;
 
 import java.util.*;
+import personne.Personne;
 
 /**
  * 
@@ -16,7 +17,8 @@ public abstract class StrategieRecherche {
 
     /**
      * @param sRecherche
+     * @return 
      */
-    public abstract void rechercher(String sRecherche);
+    public abstract ArrayList<Personne> rechercher(String sRecherche);
 
 }
