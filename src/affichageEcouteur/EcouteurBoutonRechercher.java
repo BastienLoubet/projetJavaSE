@@ -2,9 +2,12 @@ package affichageEcouteur;
 
 import client.Interactions;
 import java.awt.event.ActionEvent;
+import java.util.ArrayList;
+import personne.Personne;
+import recherche.StrategieRechercheNom;
 
 /**
- * 
+ *
  */
 public class EcouteurBoutonRechercher extends EcouteurBouton {
 
@@ -16,9 +19,12 @@ public class EcouteurBoutonRechercher extends EcouteurBouton {
 
     @Override
     public void actionPerformed(ActionEvent ae) {
-    Interactions.askString("Entrez votre paramètre de recherche ");
+        String sRecherche;
+        StrategieRechercheNom oRecherche;
+        ArrayList<Personne> aResultat;
+        sRecherche = Interactions.askString("Entrez votre paramètre de recherche ");
+        oRecherche = new StrategieRechercheNom();
+        aResultat = oRecherche.rechercher(sRecherche);
     }
-
-    
 
 }
