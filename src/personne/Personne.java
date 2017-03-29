@@ -17,14 +17,14 @@ public class Personne implements Serializable{
     /**
      * @param sNom Le nom de la personne
      * @param sPrenom 
-     * @param sTelephone 
+     * @param aTelephone 
      * @param sAdresse 
      * @param aEmails Un tableau contenant tous les emails
      */
-    public Personne(String sNom, String sPrenom, String sTelephone, String sAdresse, ArrayList<String> aEmails) {
+    public Personne(String sNom, String sPrenom, ArrayList<String> aTelephone, String sAdresse, ArrayList<String> aEmails) {
         oNom = new Nom(sNom);
         oPrenom = new Prenom(sPrenom);
-        oTelephone = new Telephone(sTelephone);
+        oTelephone = new Telephone(aTelephone);
         oAdresse = new Adresse(sAdresse);
         oEmails = new Emails(aEmails);
     }

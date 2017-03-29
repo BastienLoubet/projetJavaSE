@@ -13,8 +13,8 @@ public class FabriquePersonne {
      * @return si l'ajout a été validé.
      */
     public Boolean ajoutPersonne() {
-        String sNom, sPrenom, sAdresse, sTelephone;
-        ArrayList<String> aEmails;
+        String sNom, sPrenom, sAdresse;
+        ArrayList<String> aEmails,aTelephone;
         sNom = getNom();
         if (sNom == null)
             return false;  
@@ -24,11 +24,15 @@ public class FabriquePersonne {
         sAdresse = getAdresse();
         if (sAdresse == null)
             return false;
-        sTelephone = getTelephone();
-        if (sTelephone == null)
+        //Au moins un numero de telephone
+        aTelephone = getTelephone();
+        if (aTelephone.isEmpty())
             return false;
+        //Au moins un email
         aEmails = getEmails();
-    Personne oPersonne = new Personne(sNom, sPrenom, sTelephone, sAdresse, aEmails);
+        if (aEmails.isEmpty())
+            return false;
+    Personne oPersonne = new Personne(sNom, sPrenom, aTelephone, sAdresse, aEmails);
     ListePersonne.getInstance().ajouter(oPersonne);
     return true;
     
