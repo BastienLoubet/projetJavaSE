@@ -8,29 +8,36 @@ import personne.Personne;
  */
 public class ObservableListe extends Observable {
 
+    
+    private ArrayList<Personne> aPersonne;
+    private static ObservableListe oInstance;
+    
+    
     /**
      * Default constructor
      */
     public ObservableListe() {
+        aPersonne = new ArrayList<>();
     }
 
     /**
-     * 
+     * Pour l'implementation du singleton
+     * @return l'instance du singleton
      */
-    private ArrayList<Personne> aPersonne;
-
-    /**
-     * 
-     */
-    public void getInstance() {
-        // TODO implement here
+    public static ObservableListe getInstance() {
+        if(oInstance == null){
+            oInstance = new ObservableListe();
+        }
+        return oInstance;
     }
 
     /**
      * @param aPersonnes
      */
     public void mettreAJour(ArrayList<Personne> aPersonnes) {
-        // TODO implement here
+        aPersonne = aPersonnes;
+        this.setChanged();
+        this.notifyObservers(aPersonne);
     }
 
 }
