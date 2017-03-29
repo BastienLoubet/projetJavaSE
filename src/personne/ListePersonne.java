@@ -12,7 +12,7 @@ public class ListePersonne implements Serializable{
      * 
      */
     private ArrayList<Personne> aPersonnes;
-    private transient static ListePersonne oInstance;
+    private static ListePersonne oInstance;
 
     
     /**
