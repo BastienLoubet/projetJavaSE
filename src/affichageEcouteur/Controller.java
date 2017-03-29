@@ -1,5 +1,7 @@
 package affichageEcouteur;
 
+import affichageListeRecherche.ObservableListe;
+
 /**
  * Classe utiliser pour initialiser l'affichage et lier les ecouteurs sur les boutons d'origines
  */
@@ -15,6 +17,8 @@ public class Controller {
         oAffichage.getBoutonRechercher().addActionListener(new EcouteurBoutonRechercher());
         oAffichage.getBoutonCharger().addActionListener(new EcouteurBoutonCharger());
         oAffichage.getBoutonSauvegarder().addActionListener(new EcouteurBoutonSauvegarder());
+        //Pour l'actualisation de l'affichage
+        ObservableListe.getInstance().addObserver(oAffichage.getPaneRecherche());
     }
 
 }

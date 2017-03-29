@@ -94,20 +94,30 @@ public class Affichage {
         oFramePrincipal.add(oPanelInfo);
     }
 
-    JButton getBoutonAjouter() {
+    public JButton getBoutonAjouter() {
         return oBoutonAjouter;
     }
     
-    JButton getBoutonCharger() {
+    public JButton getBoutonCharger() {
         return oBoutonCharger;
     }
     
-    JButton getBoutonRechercher() {
+    public JButton getBoutonRechercher() {
         return oBoutonRechercher;
     }
 
-    JButton getBoutonSauvegarder() {
+    public JButton getBoutonSauvegarder() {
         return oBoutonSauvegarder;
     }
+
+    public NotreJScrollPanel getPaneRecherche() {
+        return oPaneRecherche;
+    }
+
+    public NotreJpanelInfo getPanelInfo() {
+        return oPanelInfo;
+    }
+    
+    
     
 }
