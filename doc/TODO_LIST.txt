@@ -27,3 +27,15 @@ l'application	avec	le	besoin.
 
 - Il	est	indispensable	que	le	déploiement	soit	formalisé	(diagramme	de	
 déploiement,	quels	sont	les composants,	quoi	s'installe	où,	comment,	etc.)
+
+
+-- Améliorer le graphisme, notamment les bordures et le centrage des éléments.
+
+-- Modifier le téléphone en ArrayList<string>
+
+-- Ajouter des contrôles sur les tests dans FabriquePersonne afin d'améliorer ceux-ci!
+	exemple: longueur des emails
+
+-- Manipuler l'appli dans tous les sens pour contôler les try/catch(exceptions)
+
+-- Implémenter des tests unitaires sur des classes principales.
