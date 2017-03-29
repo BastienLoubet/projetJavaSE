@@ -1,10 +1,8 @@
 package baseDeDonnees;
 
-import client.Interactions;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
-import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import personne.ListePersonne;

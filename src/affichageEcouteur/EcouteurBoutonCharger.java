@@ -3,7 +3,6 @@ package affichageEcouteur;
 import baseDeDonnees.Chargement;
 import client.Interactions;
 import java.awt.event.ActionEvent;
-import java.util.*;
 import personne.ListePersonne;
 
 /**
@@ -12,11 +11,9 @@ import personne.ListePersonne;
 public class EcouteurBoutonCharger extends EcouteurBouton {
 
     /**
-     * Default constructor
+     * methode appelée lors du clique du bouton Charger
+     * @param ae 
      */
-    public EcouteurBoutonCharger() {
-    }
-
     @Override
     public void actionPerformed(ActionEvent ae) {
         Chargement oCharge = new Chargement();
