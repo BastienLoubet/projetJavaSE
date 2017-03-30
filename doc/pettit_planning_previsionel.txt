@@ -1,4 +1,0 @@
-Lundi: Conception
-Mardi: Conception et debut du code
-Mercredi: Code et Documents
-Jeudi: Code et Documents
