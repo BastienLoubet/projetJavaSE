@@ -17,6 +17,9 @@ public class Adresse implements Serializable{
         sAdresse = s;
     }
 
+    /**
+     * @return l'instance de la classe adresse
+     */
     public String getsAdresse() {
         return sAdresse;
     }

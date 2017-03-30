@@ -12,7 +12,9 @@ public class FacadeCLient {
      */
     public FacadeCLient() {
     }
-    
+    /**
+     * initialisation du controller oControl
+     */
     public void Initialiser(){
         Controller oControl = new Controller();
     }

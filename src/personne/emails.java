@@ -17,7 +17,9 @@ public class Emails implements Serializable{
     public Emails(ArrayList<String> a) {
         aEmails=a;
     }
-    
+    /**
+     * @return le arraylist d'email
+     */
     public ArrayList<String> getaEmails(){
         return aEmails;
     }
