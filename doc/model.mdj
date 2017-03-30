@@ -16448,7 +16448,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFbE8QI/o8CyjM="
 							},
-							"name": "emails",
+							"name": "Emails",
 							"visibility": "public",
 							"isAbstract": false,
 							"isFinalSpecialization": false,
@@ -21154,7 +21154,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "emails",
+											"text": "Emails",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
