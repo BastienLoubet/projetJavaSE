@@ -2,7 +2,10 @@ package affichageEcouteur;
 
 import affichageInfo.NotreJpanelInfo;
 import affichageListeRecherche.NotreJScrollPanel;
+import java.awt.Component;
+import java.awt.Dimension;
 import java.awt.GridLayout;
+import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -65,7 +68,10 @@ public class Affichage {
     private JButton initButtonMenu(String sMes){
         JButton oButton = new JButton(sMes);
         oButton.setSize(100, 30);
+        oButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         oPanelMenu.add(oButton);
+        //Pour ajouter un espace entre les boutons
+        oPanelMenu.add(Box.createRigidArea(new Dimension(5,5)));
         return oButton;
     }
     
