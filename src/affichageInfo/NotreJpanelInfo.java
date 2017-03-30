@@ -25,17 +25,13 @@ public class NotreJpanelInfo extends JPanel implements Observer {
         Personne oPersonne;
         ObservablePersonne oObservable = (ObservablePersonne) o;
         oPersonne = oObservable.getPersonne();
-        /**
-     * on supprime les anciens labels affiché pour re affiché les nouveaux 
-     */
+     // on supprime les anciens labels affiché pour re affiché les nouveaux 
         this.removeAll();
-        /**
-     * affichage des données relativent au nom
-     */
+
+     // affichage des données relativent au nom
         this.add(new JLabel("Nom : "+oPersonne.GetNom()));
-        /**
-     * affichage des données relativent au prénom
-     */
+
+     //affichage des données relativent au prénom
         this.add(new JLabel("Prénom : "+oPersonne.GetPrenom()));
            /**
      * affichage des données relativent à l'adresse
