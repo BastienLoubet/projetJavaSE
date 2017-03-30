@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
 /**
- *
+ * La strategie de recherche par nom, accepte un regex en entre. 
  */
 public class StrategieRechercheNom extends StrategieRecherche {
 

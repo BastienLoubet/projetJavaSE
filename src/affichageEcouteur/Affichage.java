@@ -96,26 +96,50 @@ public class Affichage {
         oFramePrincipal.add(oPanelInfo);
     }
 
+    /**
+     *
+     * @return le bouton Ajouter pour l'ajout de l'ecouteur
+     */
     public JButton getBoutonAjouter() {
         return oBoutonAjouter;
     }
     
+    /**
+     *
+     * @return le bouton Charger pour l'ajout de l'ecouteur
+     */
     public JButton getBoutonCharger() {
         return oBoutonCharger;
     }
     
+    /**
+     *
+     * @return le bouton Rechercher pour l'ajout de l'ecouteur
+     */
     public JButton getBoutonRechercher() {
         return oBoutonRechercher;
     }
 
+    /**
+     *
+     * @return le bouton Sauvegarder pour l'ajout de l'ecouteur
+     */
     public JButton getBoutonSauvegarder() {
         return oBoutonSauvegarder;
     }
 
+    /**
+     *
+     * @return le JScrollPane pour l'ajout de l'ecouteur
+     */
     public NotreJScrollPanel getPaneRecherche() {
         return oPaneRecherche;
     }
 
+    /**
+     *
+     * @return le JPanel pour l'ajout de l'ecouteur
+     */
     public NotreJpanelInfo getPanelInfo() {
         return oPanelInfo;
     }

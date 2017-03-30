@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import personne.ListePersonne;
 
 /**
- * 
+ * L'écouteur du bouton Charger
  */
 public class EcouteurBoutonCharger extends EcouteurBouton {
 

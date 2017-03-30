@@ -4,12 +4,10 @@ import java.io.Serializable;
 
 
 /**
- * 
- */
-public class Prenom implements Serializable{
-/**
  * Objet pour la gestion des prénoms
  */
+public class Prenom implements Serializable{
+
     private String sPrenom;
     
     /**

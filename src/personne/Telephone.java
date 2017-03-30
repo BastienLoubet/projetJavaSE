@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- *
+ * Stocke le ou les numeros de telephones
  */
 public class Telephone implements Serializable {
 

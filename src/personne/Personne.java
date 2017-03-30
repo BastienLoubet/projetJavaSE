@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.*;
 
 /**
- * 
+ * Stocke les informations sur les contacts
  */
 public class Personne implements Serializable{
 /**
