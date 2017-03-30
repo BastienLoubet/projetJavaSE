@@ -4,7 +4,7 @@ import java.util.*;
 import personne.Personne;
 
 /**
- * 
+ * Cette objet singleton contient une liste de personne a afficher par l'interface graphique
  */
 public class ObservableListe extends Observable {
 

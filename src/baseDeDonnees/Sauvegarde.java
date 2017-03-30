@@ -8,10 +8,13 @@ import java.util.logging.Logger;
 import personne.ListePersonne;
 
 /**
- * 
+ * La classe utilise pour la sauvegarde de la liste des contacts
  */
 public class Sauvegarde {
 
+    /**
+     * Le nom du fichier utilise pour la sauvegarde et le chargement
+     */
     public static final String NOM_FICHIER=".\\carnet.save" ;
     
     /**

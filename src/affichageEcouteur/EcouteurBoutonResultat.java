@@ -2,11 +2,11 @@ package affichageEcouteur;
 
 import affichageInfo.ObservablePersonne;
 import java.awt.event.ActionEvent;
-import java.util.*;
 import personne.Personne;
 
 /**
- * 
+ * Ecouteur des boutons d'affichage des details de la personne
+ * Mets a jour ObservablePersonne
  */
 public class EcouteurBoutonResultat extends EcouteurBouton {
 
@@ -15,6 +15,7 @@ public class EcouteurBoutonResultat extends EcouteurBouton {
     
     /**
      * Construit et sauvegarde la personne cible du bouton
+     * @param oPersonne la personne correspondant au bouton
      */
     public EcouteurBoutonResultat(Personne oPersonne) {
         this.oPersonne = oPersonne;

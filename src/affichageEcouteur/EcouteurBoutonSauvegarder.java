@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import personne.ListePersonne;
 
 /**
- * 
+ * Ecouteur du bouton Sauvegarder
  */
 public class EcouteurBoutonSauvegarder extends EcouteurBouton {
 

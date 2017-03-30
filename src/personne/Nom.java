@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 
 /**
- * 
+ * Stocke le nom du contact
  */
 public class Nom implements Serializable{
 /**

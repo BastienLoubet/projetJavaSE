@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.regex.Pattern;
 
 /**
- * 
+ * CLasse responsable de l'ajout et de la verification des donnees des contacts
  */
 public class FabriquePersonne {
 

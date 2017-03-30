@@ -8,7 +8,7 @@ import personne.Personne;
 import recherche.StrategieRechercheNom;
 
 /**
- *
+ * Ecouteur bouton Rechercher
  */
 public class EcouteurBoutonRechercher extends EcouteurBouton {
 

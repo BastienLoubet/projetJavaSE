@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 import personne.ListePersonne;
 
 /**
- * 
+ * Utilise pour le chargement de la liste des contacts
  */
 public class Chargement {
 

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.*;
 
 /**
- * 
+ * Stocke la ou les adresse emails du contact
  */
 public class Emails implements Serializable{
     /**

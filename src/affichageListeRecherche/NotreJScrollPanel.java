@@ -11,7 +11,8 @@ import javax.swing.JScrollPane;
 import personne.Personne;
 
 /**
- * 
+ * Un JScrollPane qui cree automatiquement les boutons du resultats de la recherche
+ * quand la liste ObservableListe se mets a jour.
  */
 public class NotreJScrollPanel extends JScrollPane implements Observer {
 

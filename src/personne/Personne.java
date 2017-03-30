@@ -32,8 +32,8 @@ public class Personne implements Serializable{
     }
 
     /**
-     * retourne le nom
-     * @return 
+     * @return retourne le nom
+     * 
      */
     public String GetNom() {
          return oNom.getsNom();
@@ -45,13 +45,13 @@ public class Personne implements Serializable{
          return oPrenom.getsPrenom();
     }
       /**
-     * retourne le Num de tel
+     * @return retourne le Num de tel
      */
       public ArrayList<String> GetTelephone() {
          return oTelephone.getsNumTel();
     }
        /**
-     * retourne l'adresse
+     * @return retourne l'adresse
      */
      public String GetAdresse() {
          return  oAdresse.getsAdresse();
