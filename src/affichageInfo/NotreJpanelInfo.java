@@ -7,7 +7,6 @@ import java.util.Observer;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import personne.Personne;
-import java.lang.String;
 
 /**
  * classe qui va permettre d'afficher les labelles avec les différentes informations concernant la personne choisie
@@ -48,7 +47,7 @@ public class NotreJpanelInfo extends JPanel implements Observer {
         ArrayList<String> email = oPersonne.GetMail();
         int i =1;
         for (String mail : email) {
-                this.add(new JLabel("Adresse eMail" +" " + i+ " " + mail));
+                this.add(new JLabel("Adresse eMail "+i+" : " + mail));
                 i++;
             }
         /**
@@ -57,7 +56,7 @@ public class NotreJpanelInfo extends JPanel implements Observer {
         i=1;
         ArrayList<String> aNumTel = oPersonne.GetTelephone();
         for (String num : aNumTel) {
-                this.add(new JLabel("Numéro de téléphone" +" " + i+ " " + num));
+                this.add(new JLabel("Numéro de téléphone "+i+" : "+ num));
                 i++;
             }
         this.updateUI();

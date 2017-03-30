@@ -42,7 +42,7 @@ public class Affichage {
      */
     private void initFramePrincipal() {
         oFramePrincipal = new JFrame("Carnet d'adresses");
-        oFramePrincipal.setSize(640, 480);
+        oFramePrincipal.setSize(840, 480);
         oFramePrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         oFramePrincipal.setLayout(new GridLayout(1,3));
     }

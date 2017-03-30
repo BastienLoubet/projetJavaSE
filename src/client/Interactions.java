@@ -30,7 +30,7 @@ public abstract class Interactions {
      */
     public static void sayInfo(String sMessage) {
         System.out.println(sMessage);
-        JOptionPane.showMessageDialog(null,sMessage,"Erreur !", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null,sMessage,"Information", JOptionPane.INFORMATION_MESSAGE);
     }
 
 }
