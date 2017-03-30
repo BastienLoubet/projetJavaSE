@@ -7,7 +7,9 @@ import java.util.*;
  * 
  */
 public class Emails implements Serializable{
-    
+    /**
+ * Objet pour la gestion des mails
+ */
     private ArrayList<String> aEmails;
 
     /**

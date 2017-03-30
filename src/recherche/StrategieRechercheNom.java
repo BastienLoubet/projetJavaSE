@@ -21,7 +21,7 @@ public class StrategieRechercheNom extends StrategieRecherche {
     /**
      *
      * @param sRecherche
-     * @return
+     * @return la liste des personne en fonction du paramètre passé dans sRecherche
      */
     @Override
     public ArrayList<Personne> rechercher(String sRecherche) {

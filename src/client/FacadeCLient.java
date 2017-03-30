@@ -3,7 +3,7 @@ package client;
 import affichageEcouteur.Controller;
 
 /**
- * 
+ * classe qui permettra de créer l'interface graphique de l'application
  */
 public class FacadeCLient {
 

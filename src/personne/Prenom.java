@@ -7,7 +7,9 @@ import java.io.Serializable;
  * 
  */
 public class Prenom implements Serializable{
-
+/**
+ * Objet pour la gestion des prénoms
+ */
     private String sPrenom;
     
     /**

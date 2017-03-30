@@ -17,7 +17,8 @@ public abstract class StrategieRecherche {
 
     /**
      * @param sRecherche
-     * @return 
+     * @return ArrayList<Personne> 
+     * serra redéfinie dans la classe fille
      */
     public abstract ArrayList<Personne> rechercher(String sRecherche);
 

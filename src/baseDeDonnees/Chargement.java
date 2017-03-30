@@ -15,7 +15,7 @@ public class Chargement {
 
     /**
      * Methode de chargement de la liste personne, utilise le nom du fichier de Sauvegarde.NOM_FICHIER
-     * @return 
+     * @return la liste de personne présente sur le fichier de sauvegarde 
      */
     public ListePersonne charger() {
         try {

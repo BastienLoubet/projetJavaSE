@@ -7,7 +7,9 @@ import java.util.*;
  * 
  */
 public class Personne implements Serializable{
-
+/**
+ * Objets pour la gestion des personnes
+ */
     private Nom oNom;
     private Prenom oPrenom;
     private Telephone oTelephone;

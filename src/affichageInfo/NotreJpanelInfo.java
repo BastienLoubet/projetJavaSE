@@ -10,7 +10,7 @@ import personne.Personne;
 import java.lang.String;
 
 /**
- * 
+ * classe qui va permettre d'afficher les labelles avec les différentes informations concernant la personne choisie
  */
 public class NotreJpanelInfo extends JPanel implements Observer {
 

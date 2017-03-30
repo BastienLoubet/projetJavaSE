@@ -4,7 +4,7 @@ import java.util.*;
 import personne.Personne;
 
 /**
- * 
+ * classe qui va observer un objet personne
  */
 public class ObservablePersonne extends Observable {
 

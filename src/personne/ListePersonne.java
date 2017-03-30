@@ -9,8 +9,8 @@ import java.util.*;
 public class ListePersonne implements Serializable{
 
     /**
-     * 
-     */
+ * Objet pour la gestion de l liste de personne
+ */
     private ArrayList<Personne> aPersonnes;
     private static ListePersonne oInstance;
 

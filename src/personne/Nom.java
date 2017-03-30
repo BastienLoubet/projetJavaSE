@@ -8,7 +8,10 @@ import java.io.Serializable;
  * 
  */
 public class Nom implements Serializable{
-private String sNom;
+/**
+ * Objet pour la gestion des nom
+ */
+    private String sNom;
     
     /**
      * Construit et store le nom donner
